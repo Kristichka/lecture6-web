@@ -2,23 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Моя перша сторінка</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Information</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h1>Моя перша сторінка</h1>
-  <div class="todoList">
-    <h3>Список задач</h3>
-    <ul id="myList">
-    </ul>
-    <input type="text" name="newItemInput" id="newItemInput">
-    <input type="button" name="addListItem" value="Додати задачу" id="addListItem">
-    <input type="button" name="loadItems" value="Завантажити задачі" id="loadItems">
+  <h1>Information about me</h1>
+  <div class="profile">
+    <img src="https://i.ibb.co/DkDc1kg/1653073569794.jpg"/></a>
+  </div>
+  <h2>Kristina Vasyura</h2>
+  <div class="profile">
+    <a href="https://www.linkedin.com/in/kristina-vasyura-0a458323b/" target="_blank" title="Linkedin profile will be opened in a new tab" class="fa fa-linkedin"></a>
+    <a href="https://github.com/Kristichka" target="_blank" title="Github profile will be opened in a new tab" class="fa fa-github"></a>
+    <a href="https://m.facebook.com/home.php?_rdr#!/kristichk" target="_blank" title="Facebook profile will be opened in a new tab" class="fa fa-facebook"></a>
+  </div>
+
+  <h3>List of tasks</h3>
+  <ul id="myList">
+  </ul>
+  <input type="text" name="newItemInput" id="newItemInput"  placeholder="Provide a task name" title="Max: 50 chars">
+  <input type="button" name="addListItem" value="Add task" id="addListItem">
+  <input type="button" name="loadItems" value="Get tasks" id="loadItems">
+  <input type="button" name="deleteAllItems" value="Delete all" id="deleteAllItems">
   </div>
   <div id="dataLoader">
 
     <p id="data"></p>
   </div>
-  <script src="script.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 </html>

@@ -30,3 +30,11 @@ document.getElementById('loadItems').addEventListener('click', () => {
   xhttp.open('GET', '_items.html', true);
   xhttp.send();
 })
+
+//Delete all elements from a list
+    document.getElementById('deleteAllItems').addEventListener('click', () => {
+        let element = document.getElementById('myList');
+        while (element.firstChild) {
+          element.removeChild(element.firstChild);
+        }
+    })
